@@ -1,3 +1,7 @@
+package source.firstday;
+
+import source.secondday.JsonParser;
+
 import java.net.URI;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
@@ -37,8 +41,8 @@ public class App {
         Exibir e manipular os dados
          */
         System.out.println(ANSI_ROXA+"\u2735\u2735\u2735\u2735\u2735\u2735\u2735" + ANSI_RESET
-                                + ANSI_YELLOW+"IMERSÃO "+ ANSI_RESET +ANSI_AZUL+"JAVA"+ANSI_RESET+ ANSI_VERDE+" ALURA"+ANSI_RESET
-                          +ANSI_ROXA+"\u2735\u2735\u2735\u2735\u2735\u2735\u2735" +ANSI_RESET);
+                + ANSI_YELLOW+"IMERSÃO "+ ANSI_RESET +ANSI_AZUL+"JAVA"+ANSI_RESET+ ANSI_VERDE+" ALURA"+ANSI_RESET
+                +ANSI_ROXA+"\u2735\u2735\u2735\u2735\u2735\u2735\u2735" +ANSI_RESET);
         for (Map<String, String> mapFilmes : listaDeFilmes) {
             String numero = mapFilmes.get("imDbRating");
             System.out.println("\n" + ANSI_VERDE+"Rank: " +ANSI_RESET+ mapFilmes.get("rank")
@@ -84,7 +88,3 @@ public class App {
     }
 
 }
-
-
-
-
